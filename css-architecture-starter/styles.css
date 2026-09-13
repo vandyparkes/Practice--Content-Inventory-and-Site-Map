@@ -1,0 +1,85 @@
+/* Layer order: reset, base, layout, components, utilities, overrides */
+@layer reset, base, layout, components, utilities, overrides;
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+}
+
+@layer base {
+  :root {
+    /* Add design tokens here. */
+
+    /* color */
+    --color-bg: #f6f1e8;
+    --color-surface: #fffdf8;
+    --color-text: #1c1814;
+    --color-muted: #5e564c;
+    --color-accent: #b5471d;
+
+    /* type */
+    --font-family: Arial, Helvetica, sans-serif;
+    --font-size: 1rem;
+    --line-height: 1.5;
+
+    /* spacing */
+    --space-8: 0.5rem;
+    --space-16: 1rem;
+    --space-24: 1.5rem;
+    --space-32: 2rem;
+    --space-48: 3rem;
+
+    /* shape */
+    --radius: 0.5rem;
+
+    /* focus */
+    --focus-color: var(--color-accent);
+    --focus-width: 3px;
+    --focus-offset: 3px;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+  }
+
+  img,
+  svg {
+    max-width: 100%;
+  }
+}
+
+@layer layout {
+  /* Add page-level layout and composition classes here. */
+}
+
+@layer components {
+  /* Add reusable components such as buttons, cards, callouts, and forms here. */
+}
+
+@layer utilities {
+  .visually-hidden {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+  }
+}
+
+@layer overrides {
+  /* Keep this layer small. Use it only for intentional exceptions. */
+}
+
+@media print {
+  /* Add print improvements here. */
+}
