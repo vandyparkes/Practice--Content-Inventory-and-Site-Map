@@ -2,7 +2,7 @@
 
 | ID | Content item | Purpose | Format | Source/owner | Status | Risk or note |
 |---|---|---|---|---|---|---|
-| C |  |  | Text / image / table / form / SVG / media / link |  | Ready / missing / duplicate / outdated / risky / optional |  |
+| C |  |  | Text / image / table / form / SVG / media / link |  | Ready / missing / duplicate / outdated / risky / optional |
 | C1 | Trainer Bio in About and credentials | Show who the trainer is and why they are qualified | Text | Trainer | Missing | Keep credentials current and accurate |
 | C2 | For beginners and advanced lifts | Help visitors find coaching that matches their skill level | Text | Trainer | Missing | Make beginner vs advanced labels clear |
 | C3 | Session Types | Explain what kinds of sessions are offered | Text / table | Trainer | Missing | Align names with the Services page |
