@@ -138,4 +138,15 @@
 
 @media print {
   /* Add print improvements here. */
+
+  nav,
+  form,
+  .button {
+    display: none;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
 }
