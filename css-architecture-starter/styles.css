@@ -54,6 +54,11 @@
   svg {
     max-width: 100%;
   }
+
+  :focus-visible {
+    outline: var(--focus-width) solid var(--focus-color);
+    outline-offset: var(--focus-offset);
+  }
 }
 
 @layer layout {
@@ -75,6 +80,11 @@
     color: var(--color-text);
     font-weight: 600;
     text-decoration: none;
+  }
+
+  .nav-list a[aria-current="page"] {
+    color: var(--color-accent);
+    text-decoration: underline;
   }
 
   .button {
